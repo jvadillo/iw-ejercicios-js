@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands on JS! (2nd part)</title>
+</head>
+<body>
+    <main id="content"></main>
+
+    <script>
+        let content = document.getElementById('content');
+        content.innerHTML = '<h1>Otra clase sobre JS</h1>';
+        
+        let title = document.createElement('p');
+        title.textContent = "Aprendiendo a manejar el DOM";
+        content.append(title);
+
+        let subtitle = document.createElement('h2');
+        subtitle.textContent = "Modificar el DOM";
+        title.before(subtitle);
+
+        document.body.insertAdjacentHTML('afterbegin','<small>05/05/2020</small>');
+
+    </script>
+</body>
+</html>

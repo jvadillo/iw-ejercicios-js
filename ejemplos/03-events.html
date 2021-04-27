@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands on JS! (3rd part)</title>
+    <style>
+        body { width: 600px;}
+    </style>
+</head>
+<body>
+    <h1 onclick="alert('Click en título!')">Aprendiendo sobre listeners</h1>
+    <h2 id="subtitulo">Añadir eventos (pasa el ratón por encima y mira la consola)</h2>
+    <a id="google" href="https://www.google.com">Click para ir a Google</a>
+    <hr>
+    <input id="buscador" type="text" placeholder="escribe y mira la consola" />
+    
+    <script>
+
+    function saludar(event){
+        event.preventDefault(); //Detener el comportamiento por defecto
+        // En función del tipo de evento, elegir la operación.
+        if(event.type == 'click') {
+            console.log(event.type + " en " + event.currentTarget.textContent);
+        }
+        else if(event.type == 'mouseover') {
+            alert("mouseover event!");
+        }
+        else {
+            console.log("Otro evento!");
+        }
+    }
+
+    /* AÑADIR EVENTOS */
+    let h2 = document.getElementById('subtitulo');
+    h2.addEventListener('mouseover', saludar);
+
+    let google = document.getElementById('google');
+    google.addEventListener('click', saludar);
+
+    let buscador = document.getElementById('buscador');
+    buscador.addEventListener('keypress', function(event){
+        console.log(event.target.value);
+    });
+
+    </script>
+</body>
+</html>

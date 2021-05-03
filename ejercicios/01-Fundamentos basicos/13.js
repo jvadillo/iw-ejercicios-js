@@ -21,3 +21,8 @@ console.log(`Primer elemento de animales: ${colores[0]}`);
 for (let index = 0; index < animales.length; index++) {
     console.log(`Elemento en posición ${index}: ${animales[index]}`);
 }
+
+// Alternativa utilizando forEach:
+animales.forEach((elemento, index) => {
+    console.log(`Elemento en posición ${index}: ${elemento}`);
+});

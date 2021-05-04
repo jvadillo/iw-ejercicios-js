@@ -3,10 +3,13 @@ let inversiones = {
     oro: 400
 }
 
-const multiplicarInversion = (inversiones, multiplicador) => {
-    for (const clave in cuentaCorriente) {
-        inversiones[clave] *= multiplicador;
+const multiplicarInversion = (inversionesObj, multiplicador) => {
+    for (const clave in inversionesObj) {
+        inversionesObj[clave] *= multiplicador;
     }
 }
 
+multiplicarInversion(inversiones, 2);
+console.log(inversiones);
+multiplicarInversion(inversiones, 3);
 console.log(inversiones);

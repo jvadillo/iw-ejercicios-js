@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <button type="button" onclick="myFunction()">Try it</button>
-
-
+    
     <div class="characters">
         <ul class="hobbits">
             <li>Frodo Baggins</li>
@@ -48,7 +46,7 @@
         let ulList = document.getElementsByTagName('ul');
         console.log('Number of <UL>: ' + ulList.length);
 
-        // Select .characters with document.querySelector
+        // Select .characters with document.querySelector (get the first item)
         let characters = document.querySelectorAll('.characters')[0];
         console.log(characters);
         // Select .humans from .characters

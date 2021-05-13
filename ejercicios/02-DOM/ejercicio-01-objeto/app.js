@@ -21,7 +21,7 @@ function crearLista(objeto){
 }
 
 /* SOLUCIÓN ALTERNATIVA (MENOS REUTILIZABLE) */
-/*
+
 function crearLista(objeto){
     let lista = `
         <ul>
@@ -32,7 +32,7 @@ function crearLista(objeto){
         </ul>`;
     return lista;
 }
-*/
+
 
 let listaHTML = crearLista(estudiante);
 document.getElementById('lista').insertAdjacentHTML('afterbegin', listaHTML);

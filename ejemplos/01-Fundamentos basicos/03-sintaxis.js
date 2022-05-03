@@ -108,6 +108,14 @@ if (contador === 3){
     // se ejecuta si contador no es 3 ni 4
 }
 
+// Diferencias entre == y ===
+const numero = 1234 
+const numeroString = '1234'  
+
+console.log(numero == numeroString) //true
+console.log(numero === numeroString)  //false
+
+
 // IF abreviado
 let autorizacion = (edad > 18) ? true : false;
 

@@ -227,6 +227,8 @@ function mostrarNombre() {
     alert(nombreInterior);
     alert(nombreExterior); // Puede acceder 
 }
+mostrarNombre();
+alert(nombreInterior); // Error! Es variable local
 
 // Valor por defecto
 function mostrarMensaje(nombre, texto = "no hay texto") {

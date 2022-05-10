@@ -6,7 +6,7 @@ function esPar(numero) {
     } else {
         mensaje += 'impar.'
     }
-    alert(mensaje);
+    alert(mensaje); // Lo idea sería hacer un return aquí y el alert fuera de la función.
 }
 
 esPar(4);

@@ -1,7 +1,11 @@
-let suma = 0;
 
-for (let index = 20; index <= 50; index++){
-    suma += index;   
+function sumarDesdeHasta(desde, hasta) {
+    suma = 0;
+    for (let index = desde; index <= hasta; index++){
+        suma += index;   
+    }
+    return suma;
 }
 
-alert(suma);
+
+alert(sumarDesdeHasta(30, 60));

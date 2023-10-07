@@ -1,6 +1,7 @@
 let inversiones = {
     fondos: 300,
-    oro: 400
+    oro: 400,
+    plata: 100
 }
 
 const multiplicarInversion = (inversionesObj, multiplicador) => {

@@ -1,9 +1,17 @@
-let frase = prompt("Introduce tu frase: ");
-let indice = 0;
 
-while (indice <= 30) {
-    frase += ".";
-    indice++;
+const LONGITUD = 30;
+
+function anadirPuntos(frase, longitud) {
+    while (indice <= longitud) {
+        frase += ".";
+        indice++;
+        console.log("La frase es: "+frase);
+        console.log(indice);
+    }
+    return frase;
 }
 
-alert(frase);
+
+let frase = prompt("Introduce tu frase: ");
+let indice = frase.length;
+alert(anadirPuntos(frase, LONGITUD));

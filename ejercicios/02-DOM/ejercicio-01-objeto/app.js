@@ -2,8 +2,10 @@ const estudiante = {
     nombre : 'Amaia',
     apellidos : 'Jainaga Urrutia',
     edad : 27,
-    email : 'amaia@email.com'
+    email : 'amaia@email.com',
+
 }
+
 
 function crearElemento(label, valor) {
     return `<li>${label} : ${valor}</li>`;
@@ -20,15 +22,18 @@ function crearLista(objeto){
     return lista;
 }
 
-/* SOLUCIÓN ALTERNATIVA (MENOS REUTILIZABLE) 
 
-function crearLista(objeto){
+/* SOLUCIÓN MENOS REUTILIZABLE 
+
+function crearLista(estudiante){
+    
     let lista = `
         <ul>
             <li>Nombre: ${estudiante.nombre}</li>
             <li>Apellidos: ${estudiante.apellidos}</li>
             <li>Edad: ${estudiante.edad}</li>
             <li>Email: ${estudiante.email}</li>
+            <li>Dirección: ${estudiante.direccion} </li>
         </ul>`;
     return lista;
 }
@@ -36,4 +41,4 @@ function crearLista(objeto){
 
 let listaHTML = crearLista(estudiante);
 document.getElementById('lista').insertAdjacentHTML('afterbegin', listaHTML);
-// ALTERNATIVA: document.getElementById('lista').innerHTML = listaHTML;
+//document.getElementById('lista').innerHTML = listaHTML;

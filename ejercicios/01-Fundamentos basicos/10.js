@@ -1,12 +1,18 @@
 
 function esPar(numero) {
+    resultado = (numero %2 == 0) ? true : false 
+    return resultado;
+        
+}
+
+function imprimirEsPar(numero) {
     let mensaje = `El número ${numero} es: `
-    if (numero %2 == 0) {
+    if (esPar(numero)) {
         mensaje += 'par.';
     } else {
         mensaje += 'impar.'
     }
-    alert(mensaje); // Lo idea sería hacer un return aquí y el alert fuera de la función.
+    return mensaje; 
 }
 
 esPar(4);
